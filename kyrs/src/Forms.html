@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФОРМЫ В HTML</title>
+</head>
+<body>
+    <!-- action указывает на обработчик данных на сервере -- ОБЯЗАТЕЛЬЫНЙ АТРИБУТ
+      если это JS то action="#"
+    / autocomplete позволяет автоматичсеки вставить данные пользователя
+      если до этого он их где-то вводил и браузер это запомнил
+    / enctype используется если мы знаем куда отправляются данные формы и знаем как они будут обробатываться,
+     и мы хотим определить в каком формате их туда отправить
+    / method атрибут, который передает всю форму и в нем мы определяем
+     как именно(например GET - через адресную строку) -->
+    
+    <!-- Контейнер для формы -->
+     <form action="#" autocomplete="on">
+         <!-- fieldset предназначен для группировки
+             элементов формы связанных по смыслу -->
+             <!-- legend устанавливаем имя поля -->
+         <fieldset>
+             <legend>
+                 Анкета пользователя
+             </legend>
+             <label for="user-name"><b>Введите имя</b></label>
+             <input id="user-name" type="text" placeholder="Например, Иван"
+              required maxlength="7" minlength="1" autocomplete="on" autofocus
+              name="username"><br>
+
+              <label for="#">Введиет номер телефона</label>
+              <input type="tel" placeholder="+7 000 000 00 00"><br>
+
+              <label for="#">Введите email</label>
+              <input type="email" required><br>
+
+              <label for="#">Ваше любимое блюдо:</label><br>
+
+              <!-- CHECKBOX -->
+              <!--По умолчанию мы можем выжделить несколько пунктов сразу
+               Еслу нужно что пользовательмог выбрать только один из ваиантов
+               используем атрибут type="radio" -->
+              <input id="pizza" type="checkbox" name="food" required>
+              <label for="pizza">Пицца</label>
+              
+              <input id="potato" type="checkbox" name="food" required>
+              <label for="potato">Картошка</label>
+
+              <input id="soup" type="checkbox" name="food" required>
+              <label for="soup">Суп</label>
+
+              <input id="kasha" type="checkbox" name="food" required>
+              <label for="kasha">Каша</label><br>
+
+              <!-- ДАТЫ -->
+              <label for="datero">Введите дату рождения</label>
+              <input id="dataro" type="date"><br>
+
+              <!-- МЫ МОЖЕМ ЗАПРОСИТЬ ФАЙЛ ОТ ПОЛЬЗОВАТЕЛЯ 
+               елси нужно несколько файлов то используем 
+               атрибут multiple-->
+              <input type="file" multi ple><br>
+
+              <!-- ПАРОЛЬ -->
+              <label for="pass">Введите пароль</label>
+              <input id="pass" type="password"><br>
+
+              <!-- УКАЗАТЬ ПРОМЕЖУТОК СПЕЦ. КНОПКОЙ -->
+              <input type="range"><br>
+
+              <!-- КНОПКА СБРОСА ФОРМЫ -->
+              <input type="reset"><br>
+
+              <!-- РАЗВЕРНУТЫЙ КОММЕНТАРИЙ -->
+              <textarea cols="30" rows="10"></textarea><br>
+
+              <!-- ВЫПАДАЮЩИЙ СПИСОК 
+              атрибут multiple позволяет выбрать сразу несколько зачений бля этого
+              нужно зажать Ctrl и выбрать нужные элементы
+              атрибут size указывате сколько максимум элементов выпадающего списка 
+              может увидеть пользоатель
+              в теге option атрибут selected устанавливает пукт выбранным по умолчанию-->
+              <select size="3" multiple>
+                  <option value="" selected>Москва</option>
+                  <option value="">Питер</option>
+                  <option value="">Казань</option>
+              </select>
+
+              <!-- Кнопка ОТПРАВИТЬ -->
+              <br><br>
+              <input type="submit" value="Послать"><br>
+              <button typr="submit " >ОТПРАВИТЬ</button>
+
+         </fieldset>
+         <fieldset>
+             <legend>
+                 Данные пользователя
+             </legend>
+         </fieldset>
+     </form> 
+
+
+
+</body>
+</html>

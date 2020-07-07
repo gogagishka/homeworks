@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТАБЛИЦЫ В HTML</title>
+    <style>
+        table,th, td{
+            border: 1px solid black;
+        }
+        table{border-collapse: collapse; width: 100%;}
+    </style>
+</head>
+<body>
+    <!-- Создание талицы -->
+    <!-- Чтобы задать таблице обводку нужно использовтаь стиили -->
+     <table>
+         <!-- Подпись/ заголовок таблицы -->
+         <caption>Это таблицa 1</caption>
+         <!-- Новая строка таблицы -->
+         <thead>
+            <tr>
+                <!-- Заголвоок чейки -->
+                <th>Заголвок 1</th>
+                <th>Заголвок 2</th>
+                <th>Заголвок 3</th>
+                <th>Заголвок 4</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+                <!-- Ячейки таблицы -->
+                <!-- ОБЪЕДИНЕНИЕ НЕСКОЛЬКИХ СТОЛБЦОВ -->
+                <td rowspan="3" class="first">№ 1</td>
+                <td>Ячейка 2</td>
+                <td>Ячейка 3</td>
+                <td>Ячейка 4</td>
+            </tr>
+            <tr>
+               <!-- Ячейки таблицы -->
+               <td>Ячейка 2</td>
+               <td>Ячейка 3</td>
+               <td>Ячейка 4</td>
+           </tr>
+           <tr>
+               <!-- Ячейки таблицы -->
+               <td>Ячейка 2</td>
+               <td>Ячейка 3</td>
+               <td>Ячейка 4</td>
+           </tr>
+           <tr>
+            <!-- Ячейки таблицы -->
+            <!-- ОБЪЕДИНЕНИЕ НЕСКОЛЬКИХ СТОЛБЦОВ -->
+            <td rowspan="2" class="first">№ 2</td>
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+        </tr>
+        <tr>
+            <!-- Ячейки таблицы -->
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+        </tr>
+         </tbody>
+
+         <tfoot>
+             <!-- подвал таблицы -->
+             <tr>
+                <!-- ОБЪЕДИНЕНИЕ НЕСКОЛЬКИХ ЯЧЕЕК ПО ГОРИЗОНТАЛИ-->
+                <td colspan="3" style="text-align: right;">ОБЪЕДЕнил 3 ЯЧЕЙКИ</td>
+                <td>Ячейка 4</td>
+            </tr>
+          
+         </tfoot>
+
+
+
+     </table>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантические тэги</title>
+</head>
+<body>
+    <!-- СЕМАНТИЧЕСКИЕ ТЭГИ -->
+
+    <!-- Раньше -->
+    <div class="header"></div>
+    <div class="footer"> </div>
+
+    <!-- Сейчас -->
+    <header></header> <!--шапка -->
+    <footer></footer> <!-- подвал -->
+    <nav></nav>       <!-- навигационное меню -->
+
+     <!-- КАТЕГОРИИ ЭЛЕМЕНТОВ -->
+     <!-- 
+         - мета содержимое
+         - потоковое содержимое   ------header, nav, arcticle, section, aside,figure, time
+         - секционное содержимое   -------nav, arcticle, section, aside, figure
+         - заголовочное содержимое
+         - текстовое содержимое   ------- time
+         - встроенное содержимое
+         - интерактивное содержимое
+     -->
+
+     <header>
+     </header>
+     
+
+    <nav>
+    <h2>Меню</h2>
+    <li><a href="#">Главная страницы</a></li>
+    <li><a href="#">Новости</a></li>
+    <li><a href="#">Контакты</a></li>     
+    </nav>
+
+    <article>
+        <h2>Заголовок</h2>
+        <p>ваываываываыва ывававы а аыва аув аваыв аыв аыв аыва</p>
+    </article>
+
+    <section>
+    <h2>Заголовок секции</h2>
+    <arcticle></arcticle>
+    <arcticle></arcticle>
+    <arcticle></arcticle>
+    </section>
+
+    <!-- при удалении aside смысловая часть сайта не потеряется
+    в отличие от остальных случаев / ка крпимер навигационное меню  - боковая колонка-->
+    <aside>
+        <nav></nav>
+    </aside>
+
+    <footer>
+        Подвал сайта
+        <nav></nav>
+        <section></section>
+    </footer>
+
+    <address>
+        Москва
+    </address>
+
+    <!-- main - содержит основное содержимое страницы(не повторяющееся на этой странице) -->
+    <main>
+    </main>
+
+    <!-- внутри figure предоставляется автономный контент -->
+    <figure>
+        <img src="img/go.jpg" alt="" height="600px">
+        <figcaption>
+            Описнаие картинки
+        </figcaption>
+    </figure>
+
+    <time datetime="2020-20-04">20 апреля 2020 года</time>
+
+    <p>sdfsdfsdfsdfsdf <mark>sdfsdfsdf</mark> sdff sdf sdf sd fds fsd fsd</p>
+
+</body>
+</html>
